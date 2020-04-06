@@ -48,6 +48,46 @@ class Library:
         self.cboMemberType.current(0)
         self.cboMemberType .grid(row=0, column=1)
 
+        self.lblBookID=Label(DataFrameLEFT, font=('arial', 12, 'bold',), text='Book ID:', padx=2, pady=2)
+        self.lblBookID .grid(row=0, column=2, sticky=W)
+        self.txtBookID = Entry(DataFrameLEFT, font=('arial', 12, 'bold'), width =25)
+        self.txtBookID .grid(row=0, column=3)
+
+
+        self.lblBookTitle=Label(DataFrameLEFT, font=('arial', 12, 'bold',), text='Book ID:', padx=2, pady=2)
+        self.lblBookTitle .grid(row=1, column=2, sticky=W)
+        self.lblBookTitle = Entry(DataFrameLEFT, font=('arial', 12, 'bold'), width =25)
+        self.lblBookTitle.grid(row=1, column=3)
+
+
+        self.lblRef=Label(DataFrameLEFT, font=('arial', 12, 'bold',), text='Book ID:', padx=2, pady=2)
+        self.lblRef .grid(row=1, column=0, sticky=W)
+        self.txtRef= Entry(DataFrameLEFT, font=('arial', 12, 'bold'), width =25)
+        self.txtRef .grid(row=1, column=1)
+
+
+       	self.lblTitle = Label(DataFrameLEFT, font=('arial', 12, 'bold'), text="Title:", padx=2, pady=2)
+       	self.lblTitle .grid(row=2, column=0, sticky=W)
+
+       	self.cboTitle=ttk.Combobox(DataFrameLEFT, state='readonly', font=('arial', 12, 'bold'), width=23)
+       	self.cboTitle['value']=('', 'Miss.', 'Mr.', 'Mrs.', 'Dr.', 'Capt.', 'Ms.')
+       	self.cboTitle.current(0)
+       	self.cboTitle.grid(row=2, column=1)
+
+        self.lblAuthor=Label(DataFrameLEFT, font=('arial', 12, 'bold',), text='Book ID:', padx=2, pady=2)
+        self.lblAuthor .grid(row=2, column=2, sticky=W)
+        self.txtAuthor= Entry(DataFrameLEFT, font=('arial', 12, 'bold'), width =25)
+        self.txtAuthor .grid(row=2, column=3)
+
+        self.lblFirstname=Label(DataFrameLEFT, font=('arial', 12, 'bold',), text='Book ID:', padx=2, pady=2)
+        self.lblFirstname .grid(row=3, column=0, sticky=W)
+        self.txtFirstname= Entry(DataFrameLEFT, font=('arial', 12, 'bold'), width =25)
+        self.txtFirstname .grid(row=3, column=1)
+
+        self.lblDateBorrowed=Label(DataFrameLEFT, font=('arial', 12, 'bold',), text='Book ID:', padx=2, pady=2)
+        self.lblDateBorrowed .grid(row=3, column=2, sticky=W)
+        self.txtDateBorrowed= Entry(DataFrameLEFT, font=('arial', 12, 'bold'), width =25)
+        self.txtDateBorrowed .grid(row=3, column=3)
 
 
 if __name__ =='__main__':
